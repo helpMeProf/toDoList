@@ -13,6 +13,7 @@ function submitNameHandler(event){
     const nameText = nameInput.value;
     showName(nameText);
     saveName(nameText);
+    
 }
 
 function aksForName(){
