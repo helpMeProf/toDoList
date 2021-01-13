@@ -1,0 +1,93 @@
+
+body{
+    margin :0;
+    font-family: "maple";
+}
+.title{
+    font-size: 72px;
+}
+.main_container{
+    animation: fadein 1s ;
+    background-image: url("background.jpg");
+    background-size : cover;
+    width: 100vw;
+    height : 100vh;  
+}
+
+.left_box{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color : white;
+    position :relative;
+    float :left;
+    
+    width: 60%;
+    height :100vh;
+    
+}
+
+.right_box{
+    background-color : #0505057a;
+    color : white;
+   
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    float : right;
+    width :40%;
+    height: 100vh;  
+    
+}
+.js-listForm{
+    margin-top: 55px;
+}
+input{
+    color :white;
+    background: transparent;
+    border-left-style:hidden ;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-color:white;
+    outline: none;
+    font-family: "maple";
+}
+input:focus::placeholder{
+    color:transparent;
+}
+input::placeholder{
+    color :white;
+    font-family: "maple";
+}
+.js-clock{
+    position: relative;
+}
+
+
+.js-showUserName,
+.js-inputName{
+    
+    position: relative;
+    display :none;
+   
+}
+.showing {
+    display :flex;
+    
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@font-face {
+    src :url("Maplestory_Light.ttf");
+    font-family: "maple";
+}
