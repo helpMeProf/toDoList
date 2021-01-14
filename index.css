@@ -3,6 +3,22 @@ body{
     margin :0;
     font-family: "maple";
 }
+.js-toDoList{
+    
+    position: relative;
+    right : 120px;
+    
+    list-style: none;
+}
+.checkBtn{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url(checkImg.png);
+    background-size: cover;
+    background-color: transparent;
+    border :none;
+}
 .title{
     font-size: 72px;
 }
