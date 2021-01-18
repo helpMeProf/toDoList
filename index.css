@@ -1,30 +1,49 @@
 
+
 body{
     margin :0;
     font-family: "maple";
 }
-.js-toDoList{
-    
-    position: relative;
-    right : 120px;
-    
-    list-style: none;
+.js-toDoList ul{
+    overflow: scroll;
 }
+.js-toDoList li{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    list-style: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .checkBtn{
     position: relative;
     width: 30px;
     height: 30px;
-    background-image: url(checkImg.png);
+    background-image: url(img/checkImg.png);
     background-size: cover;
     background-color: transparent;
     border :none;
+}
+#nextBtn{
+    position :relative;
+    width: 25px;
+    height: 40px;
+    top :90vh;
+    left : 90%;
+    background-color: transparent;
+    background-image: url(img/right_arrow.png);
+    background-size: cover;
+    
+    border : none;
+
 }
 .title{
     font-size: 72px;
 }
 .main_container{
     animation: fadein 1s ;
-    background-image: url("background.jpg");
+    background-image: url("img/background.jpg");
     background-size : cover;
     width: 100vw;
     height : 100vh;  
@@ -40,7 +59,7 @@ body{
     position :relative;
     float :left;
     
-    width: 60%;
+    width: 60vw;
     height :100vh;
     
 }
@@ -48,18 +67,27 @@ body{
 .right_box{
     background-color : #0505057a;
     color : white;
-   
-    display : flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    display: flex;
+    
     position: relative;
     float : right;
-    width :40%;
+    width :40vw;
     height: 100vh;  
     
 }
+.right_content{
+    position :absolute;
+    top :10vh;
+    width: 100%;
+    height: fit-content;
+    display: none;
+}
+
 .js-listForm{
-    margin-top: 55px;
+    text-align: center;
+    margin : 0 auto;
+    width: 100%;
 }
 input{
     color :white;
@@ -82,7 +110,6 @@ input::placeholder{
     position: relative;
 }
 
-
 .js-showUserName,
 .js-inputName{
     
@@ -91,8 +118,10 @@ input::placeholder{
    
 }
 .showing {
-    display :flex;
-    
+    display :block;
+}
+.unshowing{
+    display: none;
 }
 
 @keyframes fadein{

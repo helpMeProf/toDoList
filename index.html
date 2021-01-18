@@ -21,13 +21,19 @@
             
             </div>
             <div class = "right_box">
-                <form class="js-listForm">
-                    <h1>메이플 할 일</h1>
-                    <input type="text" class= "no-outilne" placeholder="메할일을 적어주세요"/>
-                </form>
-                <ul class = "js-toDoList">
+                <div id = "right_content1" class="right_content showing">
+                    <form class="js-listForm">
+                        <h1>메이플 할 일</h1>
+                        <input type="text" class= "no-outilne" placeholder="메할일을 적어주세요"/>
+                    </form>
+                    <ul class = "js-toDoList"></ul>
+                </div>
+                
+                <div id = "right_content2" class = "right_content">
+                    달력 출력 예정
+                </div>
 
-                </ul>
+                <button id="nextBtn"></button>
             </div>
         </div>
     </main>
@@ -35,5 +41,6 @@
     <script src = "clock.js"></script>
     <script src= "inputName.js"></script>
     <script src = "toDoList.js"></script>
+    <script src ="nextContent.js"></script>
 </body>
 </html>
