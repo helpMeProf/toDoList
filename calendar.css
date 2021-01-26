@@ -1,0 +1,34 @@
+.calendar-container{
+    width: 100%;
+    display :grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6,1fr);
+    
+    box-sizing: border-box;
+    
+}
+.calendar-cell{
+    align-content: center;
+    border:1px solid white;
+}
+.past-month,
+.next-month{
+    color : #cccccc;
+}
+.past-month.sun
+,.next-month.sun{
+    color: pink;
+}
+.past-month.sat,
+.next-month.sat{
+    color : lightyellow;
+}
+.sun{
+    color : rgba(255, 0, 0);
+}
+.sat{
+    color :yellow;
+}
+.today{
+    color : orange;
+}
