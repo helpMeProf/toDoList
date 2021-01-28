@@ -1,15 +1,49 @@
+.calendar-header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prevBtn{
+    position :relative;
+    width: 10px;
+    height: 15px;
+    
+    
+    background-color: transparent;
+    background-image: url(img/left_arrow.png);
+    background-size: cover;
+    
+    border : none;
+}
+.nextBtn{
+    position :relative;
+    width: 10px;
+    height: 15px; 
+    background-color: transparent;
+    background-image: url(img/right_arrow.png);
+    background-size: cover;
+    
+    border : none;
+}
+.calendar-day{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-bottom: 10px;
+}
 .calendar-container{
     width: 100%;
     display :grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(6,1fr);
-    
+    row-gap: 10px;
     box-sizing: border-box;
     
 }
 .calendar-cell{
+    border-left-style:hidden ;
+    border-right-style: hidden;
     align-content: center;
-    border:1px solid white;
+    
+    
 }
 .past-month,
 .next-month{
